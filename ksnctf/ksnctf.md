@@ -8,3 +8,14 @@
 
 # DONE
 - SQLの文法→理解した
+
+# 知識まとめ
+|Problem number|knowledge|
+|:------------:|:-------:|
+|1             |    (none)     |
+|2             | ROT13(Caesar)     |
+|3             | ASCII,decode(nodejs)  |
+|4             | FSA, GOT overwrite |
+|5             | base64, 複数回掛ける, <br/>uuencode|
+|6             | SQLinjection, <br/>blind SQLinjection, <br/>SQL(SELECT, WHERE, <br/> LENGTH, SUBSTR) |
+|7             |  |

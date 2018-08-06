@@ -15,3 +15,4 @@
 - ももテクをubuntuでやる。
 - http://inaz2.hatenablog.com/entry/2014/04/20/041453
 - fsb.c作った 設定戻す方法わからなくて怖いので明日詳しく調査してからやろうと思う。
+- `sudo sysctl -w kernel.randomize_va_space=0`はシステム全体に対して効果があるので、ASLR無効にした後は`sudo sysctl -w kernel.randomize_va_space=2`に戻す。

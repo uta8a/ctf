@@ -5,4 +5,6 @@
 # やること
 - Villager Aの解説のまとめを読む
 - exploitの生成を理解する
-- SQLの文法
+
+# DONE
+- SQLの文法→理解した

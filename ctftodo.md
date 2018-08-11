@@ -1,7 +1,6 @@
 # CTF TODO LIST
 - CTFtime見ようね
-- spawctfやりましょう。
-- きちんと後から見て分かるように書く。メモでもいいけど、最後にまとめを書く。
+- きちんと後から見て分かるように問題含めて完結するように書く。メモでもいいけど、最後にまとめを書く。
 
 '''
 過去問は以下にまとまっている。
@@ -13,3 +12,9 @@ writeupを書く文化があるので、検索すれば解説が出てくるの�
 
 また、pwn良問集(bata氏による)があるので、これを埋めていくとよさそう。
 '''
+- pwn埋め https://ctf.katsudon.org/ctf4u/
+
+# config
+- 基本はthinkpadX240か、windows上のVirtualBoxで進める(Project/ubuntu_16_04/ubuntu_16_04)
+- vagrant up/vagrant halt
+- githubと、開催中のCTFはgitlabで管理(git pullを忘れずに)

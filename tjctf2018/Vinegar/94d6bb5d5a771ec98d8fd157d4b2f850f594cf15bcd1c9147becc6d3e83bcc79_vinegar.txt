@@ -1,0 +1,3 @@
+key =  Kkkkk kkkkKkkkkkkkkKkkkkkkkkKkk
+flag = uucbx{simbjyaqyvzbzfdatshktkbde}
+sha256 = 8304c5fa4186bbce7ac030d068fdd485040e65bf824ee70b0bdbac03862bec93

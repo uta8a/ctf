@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Thu Aug  9 22:53:45 2018
+Invocation: foremost v1.png 
+Output directory: /home/vagrant/ctf/ctf/tjctf2018/Interference/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: v1.png
+Start: Thu Aug  9 22:53:45 2018
+Length: 29 KB (30185 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	      29 KB 	          0 	  (300 x 300)
+Finish: Thu Aug  9 22:53:45 2018
+
+1 FILES EXTRACTED
+	
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Thu Aug  9 22:53:45 2018

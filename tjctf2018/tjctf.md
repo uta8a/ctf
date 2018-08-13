@@ -12,6 +12,10 @@
 - https://www.youtube.com/playlist?list=PL1H1sBF1VAKVmrjF1uWh5wK9a2IzmUjPc
 - https://medium.com/@mihailferaru2000/tjctf-2018-full-binary-exploitation-walk-through-a72a9870564e pwn
 - https://gitlab.com/blevy/redpwn-ctf-writeups/blob/master/tjctf2018/Abyss.md abyss分かりやすい
+- https://github.com/TheRealOddCoder/tjctf2018 learnmyflag
+- https://gist.github.com/Alaska47/524812936e000868e409ffdfd7703068 volatilevirus
+- http://blog.seekintoo.com/the-abyss-writeup.html the abyss
+- https://github.com/Lev9L-Team/ctf/tree/master/2018-08-07_tjctf sarah
 
 # 対応表
 | Problem | Knowledge |

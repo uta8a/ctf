@@ -1,8 +1,8 @@
-# 期間中はGitHubにあげない!!!!
+# まとめ
 
 - たぶん、`tjctf{}`の形をしているものを探すんだと思う。
 - tjctf2018/Volatile_Virus/file_patched.dmpは重過ぎるのでgitで管理しない
-
+- 復習は一日5個埋める(全部で44個ある)、最後の方はあきらめるのも肝心っぽい…
 
 # WriteUps
 - https://kmh.zone/writeups/tjctf-2018/

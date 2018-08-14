@@ -42,8 +42,7 @@
 | Classic | RSA(Fermat), hex |
 | Speedy Security ||
 | Python Reversing | encryptしてみる、比較する、Brute-Force-Attack |
-| Ess Kyoo Ell | SQLinjection(column),
- Esper, username='admin' |
+| Ess Kyoo Ell | SQLinjection(column), Esper, username='admin' |
 | Tilted Troop | game, ASCII |
 | Lexington State Bank | LSB |
 | RC4 took an L ||
@@ -61,9 +60,9 @@
 | Future Canary Lab ||
 | Moar Turtles ||
 | Affine | |
-| Online Banking ||
+| Online Banking | buffer overflow, radare2(i~nx) |
 | Mirror Mirror ||
-| Secure Secrets ||
+| Secure Secrets | FSB, GOT, radare2(afl)|
 | Volatile Virus ||
 | Stupid Blog ||
 | Super Secure Secrets ||

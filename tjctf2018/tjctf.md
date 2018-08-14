@@ -39,3 +39,7 @@
 - md5など、逆関数の存在するもののライブラリ化
 - python2が多く何年かしたらやばいので、簡単なものはRustで書き直すとかやってみてもいいかも(Rustの単純なコードに慣れる、テストなどの練習になる)
 - Caesars Compilation: 斜め上とかを取得するスクリプトを、wordsearchに付加する
+
+# 飛ばしたもの
+- learn my flag飛ばす
+- Speedy Security

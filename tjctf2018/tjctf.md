@@ -15,6 +15,11 @@
 - https://gist.github.com/Alaska47/524812936e000868e409ffdfd7703068 volatilevirus
 - http://blog.seekintoo.com/the-abyss-writeup.html the abyss
 - https://github.com/Lev9L-Team/ctf/tree/master/2018-08-07_tjctf sarah
+- http://blog.seekintoo.com/the-abyss-writeup.html the abyss
+- https://github.com/Lev9L-Team/ctf/tree/master/2018-08-07_tjctf mirror sarah
+- https://github.com/jazon-liu/ctf-writeups/tree/master/tjctf-2018 (many)
+- https://shrekisloveshrekis.life/tjctf/ stupidblog
+
 
 # 対応表
 | Problem | Knowledge |

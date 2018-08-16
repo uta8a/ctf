@@ -48,7 +48,7 @@
 | RC4 took an L ||
 | Moar Horses | 何回もRequest送る |
 | Grid Parser ||
-| Bad Cipher ||
+| Bad Cipher | Brute-Force-Attack, key長の特定 |
 | Weird Audio Circuit ||
 | Sarahs Cryptosystem ||
 | Programmable Hyperlinked Pasta | directory(proc/self/cwd) |
@@ -56,17 +56,17 @@
 | Ssleepy | pcapng, TCP, SSL, jpg(ffd8) |
 | We Will Rock You |  |
 | PIT or Miss ||
-| Bricked Binary ||
-| Future Canary Lab ||
+| Bricked Binary | 分からない(binary patch) |
+| Future Canary Lab | rand(), exploit(pwnと別に書くタイプ) |
 | Moar Turtles ||
 | Affine | |
 | Online Banking | buffer overflow, radare2(i~nx) |
-| Mirror Mirror ||
+| Mirror Mirror | python jail |
 | Secure Secrets | FSB, GOT, radare2(afl)|
 | Volatile Virus ||
 | Stupid Blog ||
 | Super Secure Secrets ||
-| The Abyss ||
+| The Abyss | python jail |
 
 # 後で見る
 - Weird Logo: stegsolveについて調べる、代替を考える、仕組みを知る

@@ -14,6 +14,10 @@ writeupを書く文化があるので、検索すれば解説が出てくるの�
 '''
 - pwn埋め https://ctf.katsudon.org/ctf4u/
 
+# 目標
+- 広島CTF(抽選だけど)に行ったとき内容がわかるレベルになっておく(RE, radare2の使い方をわかるなど)
+- pwnをやる(20日のめぐめぐ会までにある程度Harekazeを読む)
+
 # config
 - 基本はthinkpadX240か、windows上のVirtualBoxで進める(Project/ubuntu_16_04/ubuntu_16_04)
 - vagrant up/vagrant halt

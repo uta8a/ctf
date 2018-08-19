@@ -3,6 +3,7 @@
 - たぶん、`tjctf{}`の形をしているものを探すんだと思う。
 - tjctf2018/Volatile_Virus/file_patched.dmpは重過ぎるのでgitで管理しない
 - 復習は一日5個埋める(全部で44個ある)、最後の方はあきらめるのも肝心っぽい…
+- 終了。残り8問はまた気が向いたときにWriteUp見よう…
 
 # WriteUps
 - https://kmh.zone/writeups/tjctf-2018/ The Abyss
@@ -19,6 +20,7 @@
 - https://github.com/Lev9L-Team/ctf/tree/master/2018-08-07_tjctf mirror sarah
 - https://github.com/jazon-liu/ctf-writeups/tree/master/tjctf-2018 (many)
 - https://shrekisloveshrekis.life/tjctf/ stupidblog
+- http://yocchin.hatenablog.com/entry/2018/08/14/170400 Permutation
 
 
 # 対応表
@@ -36,21 +38,21 @@
 | Nothing but Everything | 10-based, hex, ASCII, 同じ内容であることに気づく | 
 | Caesars Compilation | library(wordsearch), ROT |
 | Huuuuuge | nmap, git(clone, --depth) |
-| Learn My Flag ||
+| Learn My Flag | machinelearning(mdf5, model, image) |
 | Request Me | HTTP(GET,POST,PUT,DELETE) |
 | Validator | radare2, ltrace, strcmp |
 | Classic | RSA(Fermat), hex |
-| Speedy Security ||
+| Speedy Security | latency, brute-force-attack |
 | Python Reversing | encryptしてみる、比較する、Brute-Force-Attack |
 | Ess Kyoo Ell | SQLinjection(column), Esper, username='admin' |
 | Tilted Troop | game, ASCII |
 | Lexington State Bank | LSB |
-| RC4 took an L ||
+| RC4 took an L | google(LC4) |
 | Moar Horses | 何回もRequest送る |
-| Grid Parser ||
+| Grid Parser | fcrackzip, extractfile, binwalk -e |
 | Bad Cipher | Brute-Force-Attack, key長の特定 |
-| Weird Audio Circuit ||
-| Sarahs Cryptosystem ||
+| Weird Audio Circuit | modulation, Audacity (よく分からなかった) |
+| Sarahs Cryptosystem | Crypto(Cayley-Purser Algorithm), coding(mathematics) |
 | Programmable Hyperlinked Pasta | directory(proc/self/cwd) |
 | Permutations ||
 | Ssleepy | pcapng, TCP, SSL, jpg(ffd8) |

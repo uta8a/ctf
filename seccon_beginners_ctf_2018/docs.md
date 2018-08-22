@@ -1,5 +1,5 @@
 # やること
-- Writeup(https://qiita.com/kusano_k/items/9b74398f5bed2792d736)を見ながら学んだことを書いていく。
+- Writeup( https://qiita.com/kusano_k/items/9b74398f5bed2792d736 )を見ながら学んだことを書いていく。
 
 ## Crypto
 ### Veni, vidi, vici

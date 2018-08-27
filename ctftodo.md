@@ -18,6 +18,10 @@ writeupを書く文化があるので、検索すれば解説が出てくるの�
 - 広島CTF(抽選だけど)に行ったとき内容がわかるレベルになっておく(RE, radare2の使い方をわかるなど)
 - pwnをやる(20日のめぐめぐ会までにある程度Harekazeを読む)
 
+# stack
+- TJCTFの復習(眺める、足りないものを整理する、理解の曖昧なpwnを理解する)
+- めぐめぐ会の復習を記事にする。(ヒープ問)
+
 # config
 - 基本はthinkpadX240か、windows上のVirtualBoxで進める(Project/ubuntu_16_04/ubuntu_16_04)
 - vagrant up/vagrant halt

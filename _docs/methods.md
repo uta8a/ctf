@@ -3,6 +3,7 @@
 - ksnctf 4,6
 - picoctf
 - tjctf Bricked Binary, Future Canary Lab, Math Whiz, Mirror Mirror, Online Banking, Secret Secrets, Tilted Troop [Pwn系]
+- twctfのload, dec_dec_dec
 - +問題例はex.をつけて自分のGitHubへのリンクを貼る(リンク先がなくなる恐れがあるため)
 
 ## common
@@ -15,7 +16,7 @@
 - curl
     - install: `sudo apt install curl`
 - tar.gzの解凍方法→`tar -zxvf file.tar.gz`
-
+- 文字の種類を考えてみる: [ex. scs7 のbase59](https://github.com/tMasaaa/ctf/blob/master/twctf2018/scs7/docs.md), [ex. mondai.zip のpcapngの文字長をasciiに変換する](https://github.com/tMasaaa/ctf/blob/master/twctf2018/mondai_zip/docs.md)
 
 ## Crypto
 - Caesar(ROT)
@@ -33,7 +34,10 @@
 - [Cayley-Purser Algorithm](http://www.tbasic.org/reference/old/cp.pdf) Sarahという女の子が開発した暗号方式。当時はRSAを超えるのではと期待されたが、実際は脆弱性があった。[復号方法](https://github.com/tMasaaa/ctf/blob/master/tjctf2018/Sarahs_Cryptosystem/1.md)
 - Latencyとbrute-force-attackを利用した統計的な攻撃: [ex. Speedy Security](https://github.com/tMasaaa/ctf/blob/master/tjctf2018/Speedy_Security/1.md)
 - Vigenere暗号(鍵の繰り返しがあるので、与えられるものは鍵の長さということがある。brute-force-attackして意味のある文字列を出すというのも有効。)
-
+- base58はIOl0が抜かれていて、bitcoinアドレスなどで使われている
+    - baseXXはXX進数という意味
+- pycryptoの使い方に慣れる(pemから抜き取る、復号手順など)
+    - ライブラリの用意(自前の平方数判定)
 
 ## Web
 - htmlのソースコードを読む
@@ -54,7 +58,8 @@
         - rootに飛び、`/proc/self/cwd`で現在動いているプログラムのディレクトリに飛べる [ex. Programmable Hyperlinked Pasta](https://github.com/tMasaaa/ctf/blob/master/tjctf2018/Programmable_Hyperlinked_Pasta/1.md)
 - curl
     - GET/PUT/POST/DELETEをオプションで使える[ex. [code]](https://github.com/tMasaaa/ctf/blob/master/tjctf2018/Request_Me/solve.py)
-
+- PHP
+    - `parse_str`で処理されたクエリ`URL?action=auth&id=XXX&pass=YYY`は、変数をセットする。
 
 ## Pwn
 - Exploit codeを書くものをPwn, そうでないものをREという分類をしています。
@@ -89,12 +94,11 @@
     - FTPデータからのzip取り出し
     - key.pemを使ったSSLの読み取り
         - `Preferences > SSL > Edit`
-        - 
 - ftpコマンド
     - `ftp 000.0.00.000`で接続
     - `ls -al`
     - `get file`でダウンロード
-
+- ICMP: 余分なもの(メッセージ)に注目する。その文字長に着目
 
 ## Forensics
 - Exif: latitude,longitude→[maps](http://earthjp.net/maps/)

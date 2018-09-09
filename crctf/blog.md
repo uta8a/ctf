@@ -112,6 +112,6 @@ d = 4553316054425420253892724515987846127686715763039967729222706835770449480940
 privkey = RSA.construct((n, e, d))
 print PKCS1_v1_5.new(privkey).decrypt(open("FLAG.encrypted", "rb").read(), "!")
 ```
-
+- flag `CRCTF{On that day, there was definitely something behind Warlock's disappearance.}` -> AC
 
 

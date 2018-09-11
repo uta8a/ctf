@@ -21,10 +21,14 @@
 - `sudo ./sys/install.sh`: インストールシェルの実行
 - これでradare2が入ります。確認として、バイナリファイル`binary_file`に対して、`r2 binary_file`とするとなにか動くはずです
 
+<br>
+
+- `r2 file`でradare2でバイナリを開きます。
 ## よく使うコマンド
 - `aaaa`: これは初手必ず行う感じの、おまじないです
 - `afl`: analysis function list関数一覧を呼び出します。怪しい関数`secret.func`があれば、`s secret.func`で飛んで`pdf`すれば中身がディスアセンブルされたものが見れます
 - `s main`: main関数に飛びます
+- `pdf`: バイナリがディスアセンブルされたものが表示されます。
 - `db [address]`: addressにブレークポイントを仕掛けます
 - `dc`: ブレークポイントまで実行します
 - `pxr @ [address]`: addressからのメモリの値を表示します。addressにはrsp, espなどのスタックポインタを指定すると嬉しいことが多いです。

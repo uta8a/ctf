@@ -29,9 +29,10 @@
 - `afl`: analysis function list関数一覧を呼び出します。怪しい関数`secret.func`があれば、`s secret.func`で飛んで`pdf`すれば中身がディスアセンブルされたものが見れます
 - `s main`: main関数に飛びます
 - `pdf`: バイナリがディスアセンブルされたものが表示されます。
+- `pxr @ [address]`: addressからのメモリの値を表示します。addressにはrsp, espなどのスタックポインタを指定すると嬉しいことが多いです。
+- 以下のブレークポイントは、デバッグモード起動時`r2 -d file`に使えるものです。
 - `db [address]`: addressにブレークポイントを仕掛けます
 - `dc`: ブレークポイントまで実行します
-- `pxr @ [address]`: addressからのメモリの値を表示します。addressにはrsp, espなどのスタックポインタを指定すると嬉しいことが多いです。
 
 ## その他[radare2とは関係ない]
 - もっと多くの情報を表示させながらバイナリを実行したい場合は、`ltrace ./file`とするとよいです。

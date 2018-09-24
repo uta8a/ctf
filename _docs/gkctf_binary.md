@@ -254,6 +254,56 @@ while local_4h <= 29:
 ```
 - 出力を見てやると、`gkctf{57_is_a_prime_number!!!}` -> AC
 - 出典: mitsuさんの自作問題
+- [+ 追記] バイナリを実行可能にする
+- readelfでバイナリの情報を見る
+```
+vagrant@vagrant:~/gkctf/mitsu$ readelf -h mitsu_200
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          14768 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         11
+  Size of section headers:           64 (bytes)
+  Number of section headers:         29
+  Section header string table index: 28
+```
+- `Entry point address: 0x0`ここがおかしい(普通は0ではなく、なんらかの値になる)
+- entrypointは通常、`endbr64`や`xor    ebp,ebp`が書かれているので、それを探す
+```
+$ objdump -d -M intel mitsu_200 | grep "endbr64"
+$ objdump -d -M intel mitsu_200 | grep "xor"
+    1044:       31 ed                   xor    ebp,ebp
+    115a:       83 f0 39                xor    eax,0x39
+    11c8:       31 db                   xor    ebx,ebx
+```
+- 1044に`xor ebp, ebp`があるので、entry pointは1040であることがわかる。
+- ELFの規格で、ヘッダのoffset 0x18に1040を書き込めばよい(エンディアンに注意して、4010と書き込む)
+- radare2を使う
+```
+$ r2 -w mitsu_200
+> aaaa
+> s 0x00000000
+> wx 4010 @ 0x18
+```
+- これでOK。実行すると
+```
+$ ./mitsu_200
+You could execute this binary! hai pro.
+```
+- breakpointを適当に仕掛けてメモリの中をのぞくとフラッグもとれる。
+
 
 ### G. packman
 - まず、`radare2`で見てやるとfcn....がたくさんあって気が滅入るので、基本的なstringsで調べてみます。

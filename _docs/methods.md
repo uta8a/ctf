@@ -18,6 +18,7 @@
 - tar.gzの解凍方法→`tar -zxvf file.tar.gz`
 - 文字の種類を数えてみる: [ex. scs7 のbase59](https://github.com/tMasaaa/ctf/blob/master/twctf2018/scs7/docs.md), [ex. mondai.zip のpcapngの文字長をasciiに変換する](https://github.com/tMasaaa/ctf/blob/master/twctf2018/mondai_zip/docs.md)
 - 絶対にflagだと思うのにflagではない場合、XORブルートフォースが効くことがある。[ex. shredder](https://github.com/tMasaaa/ctf/blob/master/sectctf2018/shredder/1.md)
+- ASCII ARTの可能性(Leetが読めるようになっておく) [ex. Section6](https://github.com/tMasaaa/ctf/blob/master/sectctf2018/section6/1.md)
 
 ## Crypto
 - Caesar(ROT)
@@ -41,7 +42,8 @@
     - ライブラリの用意(自前の平方数判定)
 - 離散対数暗号
     - g=2のようにgが小さければ普通にsageで解ける(ただsageはいろいろ終わりっぽい雰囲気なので代替を考えたほうがいいかも)→インストールチャレンジ失敗したので、[こちらのオンライン実行環境](http://sagecell.sagemath.org/)から実行する。 [ex. Matry0ska1](https://github.com/tMasaaa/ctf/blob/master/sectctf2018/matry0ska1/1.md)
-
+- AES
+    - ブロック暗号系は1bitずつ決めていくのが典型らしい。
 
 ## Web
 - htmlのソースコードを読む
@@ -126,6 +128,7 @@
     - install: `sudo gem install zsteg`
 - RGBなどをいい感じに変化させてくれるもの(あまり原理は分かってない) [stegsolve](https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve) `java -jar stegsolve.jar`で起動
 - MSDOSの昔のfloppyからファイルを復元する問題→[fatcat](https://github.com/Gregwar/fatcat)を使うと削除されたファイルの復元ができる。
+- XML系で壊れたファイル→依存関係を見てxmlファイル自体は埋め込まれていることがあるので、手動で復元できる。[ex. Section6](https://github.com/tMasaaa/ctf/blob/master/sectctf2018/section6/1.md)
 
 
 ## Misc

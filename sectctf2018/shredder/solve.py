@@ -14,4 +14,4 @@ for key in range(256):
     for i in range(len(tx)):
         flag += chr(int(tx[i]) ^ key)
     print key, flag
-    sleep(0.1)
+    sleep(0.1) # 一気にやると表示されないものが発生するのでsleep挟む

@@ -16,7 +16,8 @@
 - curl
     - install: `sudo apt install curl`
 - tar.gzの解凍方法→`tar -zxvf file.tar.gz`
-- 文字の種類を考えてみる: [ex. scs7 のbase59](https://github.com/tMasaaa/ctf/blob/master/twctf2018/scs7/docs.md), [ex. mondai.zip のpcapngの文字長をasciiに変換する](https://github.com/tMasaaa/ctf/blob/master/twctf2018/mondai_zip/docs.md)
+- 文字の種類を数えてみる: [ex. scs7 のbase59](https://github.com/tMasaaa/ctf/blob/master/twctf2018/scs7/docs.md), [ex. mondai.zip のpcapngの文字長をasciiに変換する](https://github.com/tMasaaa/ctf/blob/master/twctf2018/mondai_zip/docs.md)
+- 絶対にflagだと思うのにflagではない場合、XORブルートフォースが効くことがある。[ex. shredder](https://github.com/tMasaaa/ctf/blob/master/sectctf2018/shredder/1.md)
 
 ## Crypto
 - Caesar(ROT)
@@ -38,6 +39,9 @@
     - baseXXはXX進数という意味
 - pycryptoの使い方に慣れる(pemから抜き取る、復号手順など)
     - ライブラリの用意(自前の平方数判定)
+- 離散対数暗号
+    - g=2のようにgが小さければ普通にsageで解ける(ただsageはいろいろ終わりっぽい雰囲気なので代替を考えたほうがいいかも)→インストールチャレンジ失敗したので、[こちらのオンライン実行環境](http://sagecell.sagemath.org/)から実行する。 [ex. Matry0ska1](https://github.com/tMasaaa/ctf/blob/master/sectctf2018/matry0ska1/1.md)
+
 
 ## Web
 - htmlのソースコードを読む
@@ -121,6 +125,7 @@
 - LSB(least significant bit)を調べる問題 : [tool](https://github.com/zed-0xff/zsteg) MSBとかも調べられる
     - install: `sudo gem install zsteg`
 - RGBなどをいい感じに変化させてくれるもの(あまり原理は分かってない) [stegsolve](https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve) `java -jar stegsolve.jar`で起動
+- MSDOSの昔のfloppyからファイルを復元する問題→[fatcat](https://github.com/Gregwar/fatcat)を使うと削除されたファイルの復元ができる。
 
 
 ## Misc

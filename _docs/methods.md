@@ -64,8 +64,12 @@
         - rootに飛び、`/proc/self/cwd`で現在動いているプログラムのディレクトリに飛べる [ex. Programmable Hyperlinked Pasta](https://github.com/tMasaaa/ctf/blob/master/tjctf2018/Programmable_Hyperlinked_Pasta/1.md)
 - curl
     - GET/PUT/POST/DELETEをオプションで使える[ex. [code]](https://github.com/tMasaaa/ctf/blob/master/tjctf2018/Request_Me/solve.py)
+    - Cookie, User-Agent, Refererを設定できる[ex. i-love-heddha](https://github.com/tMasaaa/ctf/blob/master/hackoverctf2018/i-love-heddha/docs.md)
 - PHP
     - `parse_str`で処理されたクエリ`URL?action=auth&id=XXX&pass=YYY`は、変数をセットする。
+- URLエスパー
+    - 何も手掛かりがない→`/robots.txt`を見るのが典型。
+- webでは表示されなくても、curlを使うと表示されることがある。
 
 ## Pwn
 - Exploit codeを書くものをPwn, そうでないものをREという分類をしています。

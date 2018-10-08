@@ -19,12 +19,13 @@ writeupを書く文化があるので、検索すれば解説が出てくるの�
 - 少なくともTJCTFとpicoCTFのできたやつ復習、まとめをしておきたいのでそれ最優先にする。
 - pwnをやる(20日のめぐめぐ会までにある程度Harekazeを読む)
 - デバッガの環境整備を急ぐ。CRCTFまでにRev, Pwnができるように、最低限のことはする。(Pwn初級やる、TWCTFEasyをする)
+- 環境設定する(特にpython系をシステムのままやっているので、仮想環境の作りなおしをしたい。docker?で楽に作れるようにしておきたい)
 
 # stack
-- TJCTFの復習(理解の曖昧なpwnを理解する)
-- picoCTFの復習
-- TWCTFに出る
+- TJCTFの復習(理解の曖昧なpwnを理解する)→これは置いといて、easypwnから埋めていく
+- picoCTF2017の復習
 - めぐめぐ会の復習を記事にする。(ヒープ問)
+- hackover, sectの復習
 
 # config
 - 基本はthinkpadX240か、windows上のVirtualBoxで進める(Project/ubuntu_16_04/ubuntu_16_04)
